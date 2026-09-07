@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bejewelled-cascaron-71524f.netlify.app/sitemap.xml
