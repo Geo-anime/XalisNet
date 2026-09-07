@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — XalisNet</title>
+<meta name="description" content="Contacte XalisNet pour une question, une demande de service, ou pour signaler une arnaque en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .form-field { margin-bottom: 1.25rem; }
+  .form-field label { display: block; margin-bottom: 0.4rem; font-weight: 600; }
+  .form-field input, .form-field textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-surface-alt);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+  }
+  .form-field textarea { min-height: 140px; resize: vertical; }
+  .contact-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
+  @media (min-width: 800px) { .contact-grid { grid-template-columns: 3fr 2fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Xalis<span>Net</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰ Menu</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow-mark"></div>
+      <h1>Contacte-moi</h1>
+      <p class="lead">Une question, une collaboration, une demande de service, ou tu veux signaler une arnaque que tu as repérée ? Écris-moi, je réponds généralement sous 24-48h.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <form action="https://formsubmit.co/animationanimestation@gmail.com" method="POST">
+          <div class="form-field">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Nouveau message XalisNet">
+          <input type="hidden" name="_template" value="table">
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        </form>
+
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p>Le plus rapide pour une réponse.</p>
+          <a href="https://wa.me/221778386525?text=Bonjour%2C%20je%20viens%20du%20site%20XalisNet%20et%20j%27aimerais%20en%20savoir%20plus%20sur..." class="btn btn-primary" style="margin-bottom:1.5rem; display:inline-block;">Écrire sur WhatsApp</a>
+
+          <h3>Email</h3>
+          <p><a href="mailto:animationanimestation@gmail.com">animationanimestation@gmail.com</a></p>
+
+          <h3>Délai de réponse</h3>
+          <p>Je réponds généralement sous 24 à 48h.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 XalisNet — Dakar, Sénégal. <a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
